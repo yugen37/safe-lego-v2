@@ -1,0 +1,17 @@
+{
+  "site": {
+    "name": "Verified Hypnotherapists",
+    "domain": "verifiedhypnotherapists.com",
+    "tagline": "Find trusted, verified hypnotherapists near you"
+  },
+  "profession": {
+    "singular": "hypnotherapist",
+    "plural": "hypnotherapists",
+    "singularCapitalized": "Hypnotherapist",
+    "pluralCapitalized": "Hypnotherapists",
+    "service": "hypnotherapy"
+  },
+  "theme": {
+    "primaryColor": "#9966CC"
+  }
+}

@@ -11,6 +11,8 @@ import chatbotImageShapeTwoDark from '@/public/images/home-6-img/chatbot-hero-sh
 import useWhileInView from '@/hooks/useWhileInView'
 import { fadeUpAnimation, fadeUpAnimationDelay } from '@/data/animation'
 import { motion } from 'framer-motion'
+import config from '@/config'
+import Link from 'next/link'
 
 const Hero = () => {
   const ref = useRef(null)
@@ -20,24 +22,17 @@ const Hero = () => {
       <div className="container">
         <FadeUpAnimation className="relative z-10 grid grid-cols-12 items-center  max-lg:gap-y-10">
           <div className="col-span-12 md:col-span-6 lg:col-span-5 ">
-            <p className="mb-8 font-medium uppercase max-lg:mb-4">CHATBOT</p>
+            <p className="mb-8 font-medium uppercase max-lg:mb-4">{config.profession.pluralCapitalized.toUpperCase()}</p>
             <h1 className="mb-12 max-md:mb-8">
-              Chat automation <br />
-              with no coding.
+              Find a Verified <br />
+              {config.profession.singularCapitalized} Near You
             </h1>
             <p className="mb-12 max-md:mb-8">
-              Discover the next level of customer engagement with our intuitive AI-driven solution today.
+              Connect with trusted, certified {config.profession.plural} in your area. Our directory features only verified professionals to help you find the right {config.profession.service} expert for your needs.
             </p>
-            <form>
-              <div className="border-borderColour grid w-full max-w-[520px] grid-cols-12 items-center rounded-[60px] border bg-white pb-1 pe-1 pl-4 pt-1 transition-all duration-300 focus-within:border-primary dark:border-[#31332F] dark:bg-dark-200  dark:focus-within:border-primary sm:pl-5">
-                <input
-                  type="text"
-                  placeholder="Enter your email"
-                  className=" placeholder:text-light text-light col-span-8 bg-transparent leading-[1.75] text-[#A1A49D] outline-none focus:outline-none dark:placeholder:text-[#A1A49D]  xs:col-span-8"
-                />
-                <button className="btn col-span-4 max-1xl:!px-3 max-1xl:!text-sm xs:col-span-4 ">Get Started</button>
-              </div>
-            </form>
+            <Link href="/directory" className="btn inline-block">
+              Find Now
+            </Link>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-7 xl:ml-25">
             <div className="align-center relative flex justify-center ">
