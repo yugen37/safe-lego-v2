@@ -1,17 +1,11 @@
 {
-  "site": {
-    "name": "Verified Hypnotherapists",
-    "domain": "verifiedhypnotherapists.com",
-    "tagline": "Find trusted, verified hypnotherapists near you"
-  },
-  "profession": {
-    "singular": "hypnotherapist",
-    "plural": "hypnotherapists",
-    "singularCapitalized": "Hypnotherapist",
-    "pluralCapitalized": "Hypnotherapists",
-    "service": "hypnotherapy"
-  },
-  "theme": {
-    "primaryColor": "#9966CC"
+  "profession": "Hypnotherapists",
+  "professionSingular": "Hypnotherapist",
+  "domain": "verified-hypnotherapists.com",
+  "tagline": "Find Verified, Professional Hypnotherapists Near You",
+  "colors": {
+    "primary": "#9966CC",
+    "primaryDark": "#7B4FB8",
+    "primaryLight": "#B388E8"
   }
 }
